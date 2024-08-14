@@ -55,7 +55,7 @@ p
 {
     padding-left:6%;
     padding-top:0%;
-    color:white;
+    color:var(--secondary);
     margin-right:65%;
 }
 
@@ -77,7 +77,7 @@ p
 }
 
 #title-card-3>*{
-    color:white;
+    color:var(--secondary);
     padding-left:70px;
 }
 
@@ -156,7 +156,7 @@ p
         /* padding-top: -14px; */
     }
     #title-card-2>h4{
-        padding-top:9.9%;
+        padding-top:14.9%;
         padding-bottom: 0px;
     }
  }

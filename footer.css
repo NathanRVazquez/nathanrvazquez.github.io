@@ -29,3 +29,17 @@ color:black;
     font-style: normal;
     align-items: center;
 }
+
+/* media queries */
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    .footer-text{
+        display:none
+    }
+    .footer-media,.footer-button{
+        text-align:center;
+        justify-content: space-around;
+        align-items:center;
+        margin-right: 7%;
+    } 
+ }

@@ -1,0 +1,151 @@
+:root {
+    --primary: #fecc35;
+    --secondary: #27418c;
+    --accent1: white;
+    --accent2: #695b99;
+  }
+  
+
+body {
+    /* Amazing resource for working with 
+    background images -> https://www.browserstack.com/guide/how-to-make-images-responsive */
+    background-image:url("assets/aboutme-background-image.jpg");
+    /* background-size: auto 100% ; */
+    background-size: 100vw;
+    background-position: center center;
+    /* background-position-y:100px; */
+    background-position-x: auto;
+    background-repeat:no-repeat;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    /* background-size: cover; Exactly what I needed to get the background to fit on mobile */
+    background-size: cover;
+}
+
+#main-body{
+    height: auto !important;
+    
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: "eds-market-bold-slant", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: start;
+}
+
+h1{
+    padding-left:5%;
+    font-size: 85px;
+}
+
+h4{
+    font-size:30px;
+}
+
+p 
+{
+    font-family: "hoss-round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:18px;
+}
+
+#title-card-1
+{
+    color: var(--primary);
+    padding-top:2%;
+    text-shadow: 2px 1px #000000;
+}
+
+#title-card-2
+{
+    padding:7% 6% 0 6%;
+    color:white;
+}
+
+#title-card-2>h4
+{
+    color:white;
+    /* text-shadow: 2px 1px #ffffff; */
+
+}
+
+#title-card-2 > p
+{
+    font-family: "hoss-round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#title-card-3{
+    padding:2% 6% 0 6%;
+}
+
+#title-card-3>h4,p{
+    color:white;
+    /* text-shadow: 2px 1px #ffffff; */
+}
+
+footer{
+    background-color: rgba(255, 255, 255, 0.333);
+}
+
+/* media queries */
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+
+    h1{
+        font-size:40px;
+    }
+    p{
+        font-size:12px;
+    }
+    h4{
+        font-size:22px;
+    }
+    #title-card-2{
+        padding-top:2%;
+        padding-bottom:0%;
+    }
+    #paragraph-2{
+        margin-bottom:0%;
+    }
+    #title-card-3{
+        padding-top:5vw;
+    }
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px to 992 [medium sized devices]) */
+ @media only screen and (min-width: 601px) and (max-width:992px) {
+    #title-card-2{
+        padding:12% 6% 0 6%;
+    } 
+    
+    #title-card-3{
+        padding: 0% 6% 0 6%;
+        margin-bottom:0%;    
+    }
+
+    h1{
+        padding-top:10%;
+    }
+    footer{
+        margin-top:0;
+        padding:0;
+    }
+    div{
+        margin: 0 0 0 0 ;
+        padding: 0 0 0 0;
+    }
+
+ }
+
+ /* I want to write a media query for the height of the page */
+  @media (max-height: 800px) {
+
+
+ } 
+ 
